@@ -1,0 +1,52 @@
+header, section, footer {
+	width: 960px;
+	margin: auto;
+	font-family: Calibri;
+}
+
+h1 {
+	text-align: center;
+}
+
+.estilo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #FF0000;
+}
+header {
+	background-color: #aab8e2;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+footer {
+	background-color: #aab8e2;
+	padding: 10px 0;
+	text-align: center;
+}
+
+h2 {
+	background-color: #4f196a;
+	padding: 10px;
+}
+
+.txt_destacado {
+	color: #cce2aa;
+	font-weight: bolder;
+	text-align: right;
+	background-color: rgb(27, 27, 27);
+	padding: 10px;
+}
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+	header, section, footer {
+	width: 580px;
+}
+}
+
+@media all and (max-width: 599px) {
+	header, section, footer {
+	width: 100%;
+}
+}
