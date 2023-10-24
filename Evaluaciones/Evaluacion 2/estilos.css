@@ -1,136 +1,115 @@
+/* Estilos generales */
 .container {
-  width:1080px;
-  margin:0px auto;
-  font-size:1em;
-  font-family: "Arial", Georgia, Serif;
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+  font-family: Arial, Georgia, serif;
   font-size: 15px;
 }
+
+/* Encabezado */
 header {
-  text-align:center;
+  text-align: center;
   border: 1px solid #666;
-  background: #cccccc;
+  background: #ccc;
+  padding: 10px;
 }
+
+/* Enlaces */
 a {
   color: #333;
   text-decoration: none;
 }
-section,aside {
-  margin-top: 5px;
-  padding: 10px;
-  -moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;border-radius:3px;
+
+/* Sección principal y barra lateral */
+section, aside {
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 3px;
 }
+
+/* Sección principal */
 section {
   float: left;
   width: 70%;
   background: #fafafa;
   border: 1px solid #ccc;
+  box-sizing: border-box;
 }
+
+/* Barra lateral */
 aside {
   float: right;
   width: 25%;
-  background:#ccc;
+  background: #ccc;
   color: #333;
+  box-sizing: border-box;
 }
+
+/* Navegación */
 nav {
-  padding:0.2%;
-  background:#f06156;
-  margin-top: 0.5%;
+  background: #f06156;
+  margin-top: 10px;
+  padding: 1%;
 }
+
 nav ul {
-  list-style-type:none;
-  padding:0px;
+  list-style-type: none;
+  padding: 0;
   width: 100%;
-  display: table;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 nav ul li {
-  display: inline;
+  margin: 0 5px;
 }
+
 nav ul li:hover {
   background-color: #ccc;
   text-decoration: underline;
 }
+
 nav ul li a {
- display:inline-block;
- text-align:center;
- text-decoration:none;
- color: #75302a;
- font-weight: bold;
-  padding:6px 15px;
-  margin:2px;
-  background:#fafafa;
-  -moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;border-radius:3px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #75302a;
+  font-weight: bold;
+  padding: 6px 15px;
+  margin: 2px;
+  background: #fafafa;
+  border-radius: 3px;
 }
+
+/* Pie de página */
 footer {
   position: fixed;
   width: 100%;
-  right: 0;
   bottom: 0;
-  left: 0;
-  padding: 10px 0px 10px 0px;
   background-color: #333;
+  padding: 10px 0;
   text-align: center;
 }
+
 footer a {
   color: #fff;
 }
 
+/* Encabezado 2 */
 h2 {
   color: #f06156;
 }
-/* pantalla maximo 980px */
-@media screen and (max-width:980px) {
-  .container {
-    width:98%;
-  }
-  section {
-    width:68%;
-  }
-}
- 
-/* pantalla maximo 700px */
-@media screen and (max-width:700px) {
-  aside,section {
-    float:none;
-    width:96%;
-    font-size:1.2em;
-  }
-  nav, section {
-    font-size:1.2em;
-  }
-  aside {
-    margin-top:5px;
-    background:#333;
-    color: #fff;
-  }
-  nav ul {
-    float:none;
-    clear:both;
-  }
-}
- 
- 
-/* pantalla maximo 480px */
-@media screen and (max-width:480px) {
-  aside {
-    display:block;
-    background:#333;
-    color: #fff;
-    font-size:1.5em;
-  }
-  nav, section {
-    font-size:1.5em;
-  }
-  section {
-    width:94%;
-  }
-  nav ul {
-    display: table;
-    text-align: center;
-    float: none;
-    width:100%;
-  }
-  nav ul li {
-    float:none;
-  }
+
+/* Resultado */
+.resultado {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #333;
+  background: #f06156;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 24px;
 }
